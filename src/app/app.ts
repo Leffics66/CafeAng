@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Main } from './main/main';
 
 @Component({
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterLink, RouterOutlet, Main],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
